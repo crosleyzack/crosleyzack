@@ -1,6 +1,7 @@
 <img src="landscape.gif" width="100%" height="100%">
-<!-- Credit to W00kieetreiber @ https://www.reddit.com/r/Firewatch/comments/s9m7b1/i_made_this/ -->
+<!-- Credit to W00kieetreiber @ https://www.reddit.com/r/Firewatch/comments/s9m7b1/i_made_this/ for gif -->
 
+<!-- Credit to alexandresanlim @ https://github.com/alexandresanlim/Badges4-README.md-Profile for badges -->
 <p align='center'>
 
   <a href="https://www.linkedin.com/in/crosleyzack/">
