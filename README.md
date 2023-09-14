@@ -31,3 +31,9 @@
   &nbsp;&nbsp;
   <img src="https://img.shields.io/badge/Debian-A81D33?style=for-the-badge&logo=debian&logoColor=white" />
 </p>
+
+<--
+To make new badges, use:                                                                         
+https://img.shields.io/badge/Google%20Cloud-4285F4?style=for-the-badge&logo=googlecloud&logoColor=grey
+                            |--- String --| |color|                      |simple-icon-namek|    |icon-color|
+-->
