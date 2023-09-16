@@ -32,7 +32,7 @@
   <img src="https://img.shields.io/badge/Debian-A81D33?style=for-the-badge&logo=debian&logoColor=white" />
 </p>
 
-[Public Key](key.pub)
+<-- [Public Key](key.pub) -->
 
 <--
 To make new badges, use:                                                                         
