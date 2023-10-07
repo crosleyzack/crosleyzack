@@ -32,7 +32,7 @@
   <img src="https://img.shields.io/badge/GIT-E44C30?style=for-the-badge&logo=git&logoColor=white" />
   &nbsp;
   <!-- <img src="https://img.shields.io/badge/latex-008080?style=for-the-badge&logo=latex&logoColor=white" /> -->
-  <img src="https://img.shields.io/badge/Google%20Cloud-4285F4?style=for-the-badge&logo=googlecloud&logoColor=white" />
+  <img src="https://img.shields.io/badge/GCloud-4285F4?style=for-the-badge&logo=googlecloud&logoColor=white" />
   &nbsp;
   <!-- <img src="https://img.shields.io/badge/yubico-84BD80?style=for-the-badge&logo=yubico&logoColor=white" /> -->
   <img src="https://img.shields.io/badge/postgresql-4169E1?style=for-the-badge&logo=postgresql&logoColor=white" />
