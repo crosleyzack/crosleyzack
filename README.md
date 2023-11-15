@@ -51,6 +51,7 @@
   <img src="https://img.shields.io/badge/tmux-1BB915?style=for-the-badge&logo=tmux&logoColor=white" />
   &nbsp;
   <img src="https://img.shields.io/badge/xorg-F28834?style=for-the-badge&logo=xdotorg&logoColor=white" />
+  <!-- <img src="https://img.shields.io/badge/wayland-FFBC00?style=for-the-badge&logo=wayland&logoColor=white" /> -->
   &nbsp;
   <img src="https://img.shields.io/badge/Debian-A81D33?style=for-the-badge&logo=debian&logoColor=white" />
 </p>
