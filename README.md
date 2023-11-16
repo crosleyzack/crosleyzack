@@ -9,7 +9,7 @@
   </a>&nbsp;&nbsp;
   <a href="https://crosleyzack.com">
     <!-- TODO change from black? Maybe censys orange #FFAE5F? -->
-    <img src="https://img.shields.io/badge/website-000000?style=for-the-badge&logo=About.me&logoColor=white" />
+    <img src="https://img.shields.io/badge/website-222222?style=for-the-badge&logo=githubpages&logoColor=white" />
   </a>
 
 </p>
