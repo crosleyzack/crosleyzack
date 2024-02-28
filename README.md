@@ -62,6 +62,7 @@ https://img.shields.io/badge/with%20a%20logo-8A2BE2?style=for-the-badge&logo=dat
   <!-- <img src="https://img.shields.io/badge/wayland-FFBC00?style=for-the-badge&logo=wayland&logoColor=white" /> -->
   &nbsp;
   <img src="https://img.shields.io/badge/Debian-A81D33?style=for-the-badge&logo=debian&logoColor=white" />
+  <!-- <img src="https://img.shields.io/badge/fedora-51A2DA?style=for-the-badge&logo=fedora&logoColor=white" /> -->
 </p>
 
 <!-- [Public Key](key.pub) -->
