@@ -39,7 +39,7 @@
 
   <img src="https://img.shields.io/badge/gcloud-4285F4?style=for-the-badge&logo=googlecloud&logoColor=white" />
   &nbsp;
-  <img src="https://img.shields.io/badge/pubsub-AECBFA?style=for-the-badge&logo=googlepubsub&logoColor=white" />
+  <img src="https://img.shields.io/badge/pubsub-90B0E0?style=for-the-badge&logo=googlepubsub&logoColor=white" />
   &nbsp;
   <img src="https://img.shields.io/badge/postgresql-4169E1?style=for-the-badge&logo=postgresql&logoColor=white" />
   &nbsp;
