@@ -65,7 +65,7 @@
   &nbsp;
   <img src="https://img.shields.io/badge/tmux-1BB915?style=for-the-badge&logo=tmux&logoColor=white" />
   &nbsp;
-  <img src="https://img.shields.io/badge/linux-FCC624?style=for-the-badge&logo=linux&logoColor=white" />
+  <img src="https://img.shields.io/badge/linux-E0B020?style=for-the-badge&logo=linux&logoColor=white" />
   <!-- <img src="https://img.shields.io/badge/xorg-F28834?style=for-the-badge&logo=xdotorg&logoColor=white" /> -->
   <!-- <img src="https://img.shields.io/badge/wayland-F0B000?style=for-the-badge&logo=wayland&logoColor=white" /> -->
   <!-- <img src="https://img.shields.io/badge/Debian-A81D33?style=for-the-badge&logo=debian&logoColor=white" /> -->
