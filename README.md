@@ -13,7 +13,7 @@
   </a>
   &nbsp;&nbsp;
   <!-- TODO update with proper URI later -->
-  <a href="https://signal.me/#u/crosleyzack.01">
+  <a href="https://signal.me/#eu/19hMy6iGDXwaBMNL0wdNbtf5alA5P9j3JkJSp//lHrHXtawqWEROWK1MatAWsUz1">
     <img src="https://img.shields.io/badge/signal-3A76F0?style=for-the-badge&logo=signal&logoColor=white" />
   </a>
   <!--<img src="https://img.shields.io/badge/signal-3A76F0?style=for-the-badge&logo=signal&logoColor=white" onmouseover="this.src='https://img.shields.io/badge/crosleyzack.01-3A76F0?style=for-the-badge&logo=signal&logoColor=white'" onmouseout="this.src='https://img.shields.io/badge/signal-3A76F0?style=for-the-badge&logo=signal&logoColor=white'" />-->
