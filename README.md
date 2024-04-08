@@ -46,6 +46,7 @@
   <img src="https://img.shields.io/badge/docker-2CA5E0?style=for-the-badge&logo=docker&logoColor=white" />
   &nbsp;
   <img src="https://img.shields.io/badge/kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white" />
+  <!-- <img src="https://img.shields.io/badge/django-092E20?style=for-the-badge&logo=django&logoColor=white" /> -->
   <!-- <img src="https://img.shields.io/badge/latex-008080?style=for-the-badge&logo=latex&logoColor=white" /> -->
   <!-- <img src="https://img.shields.io/badge/yubico-84BD80?style=for-the-badge&logo=yubico&logoColor=white" /> -->
   <!-- <img src="https://img.shields.io/badge/wappalyzer-4608AD?style=for-the-badge&logo=wappalyzer&logoColor=white" /> -->
