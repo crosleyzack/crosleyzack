@@ -32,7 +32,8 @@
   <img src="https://img.shields.io/badge/clojure-5881D8?style=for-the-badge&logo=clojure&logoColor=white" />
   &nbsp;
   <img src="https://img.shields.io/badge/julia-9558B2?style=for-the-badge&logo=julia&logoColor=white" />
-  <!-- <img src="https://img.shields.io/badge/typescript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" /> -->
+  &nbsp;
+  <img src="https://img.shields.io/badge/typescript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" />
 
   <br >
 
@@ -92,6 +93,6 @@ https://img.shields.io/badge/with%20a%20logo-8A2BE2?style=for-the-badge&logo=dat
 
 <details>
   <p align="center">
-    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/326.png" alt="Random Pokemon" height="100" width="100" />
+    <img src="{{pokemon}}" alt="Random Pokemon" height="100" width="100" />
   </p>
 </details>
