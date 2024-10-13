@@ -33,13 +33,15 @@
   &nbsp;
   <img src="https://img.shields.io/badge/julia-9558B2?style=for-the-badge&logo=julia&logoColor=white" />
   &nbsp;
-  <img src="https://img.shields.io/badge/typescript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" />
+  <img src="https://img.shields.io/badge/bash-4EAA25?style=for-the-badge&logo=gnubash&logoColor=white" />
 
   <br >
 
   <img src="https://img.shields.io/badge/gcloud-4285F4?style=for-the-badge&logo=googlecloud&logoColor=white" />
   &nbsp;
   <img src="https://img.shields.io/badge/pubsub-90B0E0?style=for-the-badge&logo=googlepubsub&logoColor=white" />
+  &nbsp;
+  <img src="https://img.shields.io/badge/spanner-4285F4?style=for-the-badge&logo=googlecloudspanner&logoColor=white" />
   &nbsp;
   <img src="https://img.shields.io/badge/postgresql-4169E1?style=for-the-badge&logo=postgresql&logoColor=white" />
   &nbsp;
@@ -51,11 +53,11 @@
 
   <img src="https://img.shields.io/badge/git-E44C30?style=for-the-badge&logo=git&logoColor=white" />
   &nbsp;
-  <img src="https://img.shields.io/badge/vscode-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white" />
+  <img src="https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white" />
   &nbsp;
-  <img src="https://img.shields.io/badge/bash-4EAA25?style=for-the-badge&logo=gnubash&logoColor=white" />
+  <img src="https://img.shields.io/badge/vscode-0078D4?style=for-the-badge&logo=vscodium&logoColor=white" />
   &nbsp;
-  <img src="https://img.shields.io/badge/VIM-%2311AB00.svg?&style=for-the-badge&logo=vim&logoColor=white" />
+  <img src="https://img.shields.io/badge/vim-019733?style=for-the-badge&logo=vim&logoColor=white" />
   &nbsp;
   <img src="https://img.shields.io/badge/tmux-1BB915?style=for-the-badge&logo=tmux&logoColor=white" />
   &nbsp;

@@ -122,7 +122,6 @@ func main() {
 	if err != nil {
 		log.Fatal(err)
 	}
-	log.Printf("Got pokemon: %v", pokemon)
 	readme, err := fs.ReadFile("README.base.md")
 	if err != nil {
 		log.Fatal(err)
