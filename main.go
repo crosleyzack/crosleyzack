@@ -10,6 +10,8 @@ import (
 	"net/http"
 	"os"
 	"strings"
+
+	"github.com/samber/lo"
 )
 
 //go:embed README.base.md
@@ -33,33 +35,48 @@ type Sprites struct {
 	FrontShinyFemale string `json:"front_shiny_female"`
 }
 
-func (s Sprites) hasGenderedForm() bool {
-	return s.FrontFemale != "" && s.FrontShinyFemale != ""
+type GameSprites struct {
+	Sprites
+	Animated Sprites `json:"animated"`
 }
 
-func (s Sprites) getSprite(male bool, shiny bool) (uri string) {
-	if shiny {
-		switch male {
-		case true:
-			uri = s.FrontShiny
-		default:
-			uri = s.FrontShinyFemale
-		}
-	} else {
-		switch male {
-		case true:
-			uri = s.FrontDefault
-		default:
-			uri = s.FrontFemale
-		}
-	}
-	return uri
+type Generation struct {
+	BlackWhite GameSprites `json:"black-white"`
+}
+
+type Versions struct {
+	// only grabbing fifth gen as it has gifs
+	Fifth Generation `json:"generation-v"`
+}
+
+type TopLevelSprites struct {
+	// default sprites
+	Sprites
+	// Various versions of the sprite
+	Versions Versions `json:"versions"`
 }
 
 // Pokemon is a struct that contains the name and sprites of a pokemon
 type Pokemon struct {
-	Name    string  `json:"name"`
-	Sprites Sprites `json:"sprites"`
+	Name    string          `json:"name"`
+	Sprites TopLevelSprites `json:"sprites"`
+}
+
+func (p Pokemon) hasGenderedForm() bool {
+	return p.Sprites.FrontFemale != "" && p.Sprites.FrontShinyFemale != ""
+}
+
+func (p Pokemon) getSprite(male bool, shiny bool) (uri string) {
+	if shiny && male {
+		uri = lo.CoalesceOrEmpty(p.Sprites.Versions.Fifth.BlackWhite.Animated.FrontShiny, p.Sprites.FrontShiny)
+	} else if male && !shiny {
+		uri = lo.CoalesceOrEmpty(p.Sprites.Versions.Fifth.BlackWhite.Animated.FrontDefault, p.Sprites.FrontDefault)
+	} else if !male && shiny {
+		uri = lo.CoalesceOrEmpty(p.Sprites.Versions.Fifth.BlackWhite.Animated.FrontShinyFemale, p.Sprites.FrontShinyFemale)
+	} else {
+		uri = lo.CoalesceOrEmpty(p.Sprites.Versions.Fifth.BlackWhite.Animated.FrontFemale, p.Sprites.FrontFemale)
+	}
+	return uri
 }
 
 func getPokemon(number int) (*Pokemon, error) {
@@ -86,32 +103,32 @@ func getPokemon(number int) (*Pokemon, error) {
 
 func getSprite(pokemon *Pokemon) string {
 	male := true
-	if pokemon.Sprites.hasGenderedForm() {
+	if pokemon.hasGenderedForm() {
 		male = rand.Float32() < 0.5
 	}
-	return pokemon.Sprites.getSprite(male, isShiny())
+	return pokemon.getSprite(male, isShiny())
 }
 
-func getRandomEncounter() (string, error) {
-	pokemon, err := getPokemon(getPokemonNumber())
-	if err != nil {
-		return "", fmt.Errorf("error getting pokemon: %w", err)
-	}
-	return getSprite(pokemon), nil
+func newReadme(readme string, pokemon *Pokemon) string {
+	// update link and name
+	readme = strings.Replace(string(readme), "{{link}}", getSprite(pokemon), 1)
+	readme = strings.Replace(readme, "{{name}}", strings.Title(pokemon.Name), 1)
+	return readme
 }
 
 // main loads root command from cmds package and executes it
 func main() {
-	encounter, err := getRandomEncounter()
+	pokemon, err := getPokemon(getPokemonNumber())
 	if err != nil {
 		log.Fatal(err)
 	}
+	log.Printf("Got pokemon: %v", pokemon)
 	readme, err := fs.ReadFile("README.base.md")
 	if err != nil {
 		log.Fatal(err)
 	}
-	newREADME := strings.Replace(string(readme), "{{pokemon}}", encounter, 1)
-	if err := os.WriteFile("README.md", []byte(newREADME), 0666); err != nil {
+	new := newReadme(string(readme), pokemon)
+	if err := os.WriteFile("README.md", []byte(new), 0666); err != nil {
 		log.Fatal(err)
 	}
 	return
