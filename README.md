@@ -12,14 +12,10 @@
     <img src="https://img.shields.io/badge/website-222222?style=for-the-badge&logo=githubpages&logoColor=white" />
   </a>
   &nbsp;&nbsp;
+  <!-- TODO update with proper URI later -->
   <a href="https://signal.me/#eu/19hMy6iGDXwaBMNL0wdNbtf5alA5P9j3JkJSp//lHrHXtawqWEROWK1MatAWsUz1">
     <img src="https://img.shields.io/badge/signal-3A76F0?style=for-the-badge&logo=signal&logoColor=white" />
   </a>
-  &nbsp;&nbsp;
-  <a href="mailto:mail@crosleyzack.com">
-    <img src="https://img.shields.io/badge/email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" />
-  </a>
-
   <!--<img src="https://img.shields.io/badge/signal-3A76F0?style=for-the-badge&logo=signal&logoColor=white" onmouseover="this.src='https://img.shields.io/badge/crosleyzack.01-3A76F0?style=for-the-badge&logo=signal&logoColor=white'" onmouseout="this.src='https://img.shields.io/badge/signal-3A76F0?style=for-the-badge&logo=signal&logoColor=white'" />-->
 </p>
 
@@ -37,7 +33,7 @@
   &nbsp;
   <img src="https://img.shields.io/badge/julia-9558B2?style=for-the-badge&logo=julia&logoColor=white" />
   &nbsp;
-  <img src="https://img.shields.io/badge/bash-4EAA25?style=for-the-badge&logo=gnubash&logoColor=white" />
+  <img src="https://img.shields.io/badge/typescript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" />
 
   <br >
 
@@ -45,28 +41,28 @@
   &nbsp;
   <img src="https://img.shields.io/badge/pubsub-90B0E0?style=for-the-badge&logo=googlepubsub&logoColor=white" />
   &nbsp;
-  <img src="https://img.shields.io/badge/spanner-4285F4?style=for-the-badge&logo=googlecloudspanner&logoColor=white" />
-  &nbsp;
   <img src="https://img.shields.io/badge/postgresql-4169E1?style=for-the-badge&logo=postgresql&logoColor=white" />
   &nbsp;
   <img src="https://img.shields.io/badge/docker-2CA5E0?style=for-the-badge&logo=docker&logoColor=white" />
   &nbsp;
   <img src="https://img.shields.io/badge/kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white" />
+  <!-- <img src="https://img.shields.io/badge/django-092E20?style=for-the-badge&logo=django&logoColor=white" /> -->
   <!-- <img src="https://img.shields.io/badge/latex-008080?style=for-the-badge&logo=latex&logoColor=white" /> -->
+  <!-- <img src="https://img.shields.io/badge/yubico-84BD80?style=for-the-badge&logo=yubico&logoColor=white" /> -->
+  <!-- <img src="https://img.shields.io/badge/wappalyzer-4608AD?style=for-the-badge&logo=wappalyzer&logoColor=white" /> -->
   <!-- <img src="https://img.shields.io/badge/redis-DC382D?style=for-the-badge&logo=redis&logoColor=white" /> -->
+  <!-- <img src="https://img.shields.io/badge/scala-DC322F?style=for-the-badge&logo=scala&logoColor=white" /> -->
 
 
   <br >
 
   <img src="https://img.shields.io/badge/git-E44C30?style=for-the-badge&logo=git&logoColor=white" />
   &nbsp;
-  <img src="https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white" />
+  <img src="https://img.shields.io/badge/vscode-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white" />
   &nbsp;
-  <img src="https://img.shields.io/badge/vscode-0078D4?style=for-the-badge&logo=vscodium&logoColor=white" />
+  <img src="https://img.shields.io/badge/bash-4EAA25?style=for-the-badge&logo=gnubash&logoColor=white" />
   &nbsp;
-  <img src="https://img.shields.io/badge/mozilla-000000?style=for-the-badge&logo=mozilla&logoColor=white" />
-  &nbsp;
-  <img src="https://img.shields.io/badge/vim-019733?style=for-the-badge&logo=vim&logoColor=white" />
+  <img src="https://img.shields.io/badge/VIM-%2311AB00.svg?&style=for-the-badge&logo=vim&logoColor=white" />
   &nbsp;
   <img src="https://img.shields.io/badge/tmux-1BB915?style=for-the-badge&logo=tmux&logoColor=white" />
   &nbsp;
@@ -97,6 +93,6 @@ https://img.shields.io/badge/with%20a%20logo-8A2BE2?style=for-the-badge&logo=dat
 
 <details>
   <p align="center">
-    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/28.png" alt="Random Pokemon" height="100" width="100" />
+    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/230.png" alt="Random Pokemon" height="100" width="100" />
   </p>
 </details>
