@@ -17,9 +17,8 @@ jobs:
         run: go get github.com/samber/lo@v1
       - name: Create new README
         run: go run main.go
-      - run: |
-          git config user.name crosleyzack
-          git config user.email crosleyzack@gmail.com
-          git add -f README.md
-          git diff --quiet && git diff --staged --quiet || git commit -m "[gh-action] Daily Encounter"
-          git push origin main
+      - name: upload new readme
+        uses: actions/upload-artifact@v4
+        with:
+          name: README.md
+          path: README.md
