@@ -1,6 +1,7 @@
 package main
 
 import (
+	"math"
 	"embed"
 	"encoding/json"
 	"fmt"
@@ -9,6 +10,7 @@ import (
 	"math/rand/v2"
 	"net/http"
 	"os"
+	"sort"
 	"strings"
 
 	"github.com/samber/lo"
@@ -20,11 +22,6 @@ var fs embed.FS
 func getPokemonNumber() int {
 	// first four gens, because they are the best
 	return rand.IntN(494)
-}
-
-func isShiny() bool {
-	// https://bulbapedia.bulbagarden.net/wiki/Shiny_Pok%C3%A9mon
-	return rand.IntN(65536) < 16
 }
 
 // Sprites is a struct that contains the URLs for the different sprites of a pokemon
@@ -101,17 +98,71 @@ func getPokemon(number int) (*Pokemon, error) {
 	return &pokemon, nil
 }
 
-func getSprite(pokemon *Pokemon) string {
+func getSprite(pokemon *Pokemon, shiny bool) string {
 	male := true
 	if pokemon.hasGenderedForm() {
 		male = rand.Float32() < 0.5
 	}
-	return pokemon.getSprite(male, isShiny())
+	return pokemon.getSprite(male, shiny)
 }
 
-func newReadme(readme string, pokemon *Pokemon) string {
+type PlanetaryKIndex struct {
+	Index float64 `json:"estimated_kp"`
+}
+
+func getPlanetaryKIndex() ([]PlanetaryKIndex, error) {
+	requestURL := fmt.Sprintf("https://services.swpc.noaa.gov/json/planetary_k_index_1m.json")
+	resp, err := http.Get(requestURL)
+	if err != nil {
+		return nil, fmt.Errorf("error making http request: %w", err)
+	}
+	if resp.StatusCode != http.StatusOK {
+		return nil, fmt.Errorf("error getting planetary k indexes: %s", resp.Status)
+	}
+	defer resp.Body.Close()
+	bodyBytes, err := io.ReadAll(resp.Body)
+	if err != nil {
+		return nil, fmt.Errorf("error reading response body: %w", err)
+	}
+	indexes := make([]PlanetaryKIndex, 0)
+	err = json.Unmarshal(bodyBytes, &indexes)
+	if err != nil {
+		return nil, fmt.Errorf("error unmarshalling response body: %w", err)
+	}
+	return indexes, nil
+}
+
+func averageIndex(indexes []PlanetaryKIndex) float64 {
+	sort.Slice(indexes, func(i, j int) bool {
+		return indexes[i].Index > indexes[j].Index
+	})
+	result := lo.SumBy(indexes[:10], func(index PlanetaryKIndex) float64 {
+		return index.Index
+	})
+	return result / 10
+}
+
+func getPShiny(index float64) float64 {
+	// https://bulbapedia.bulbagarden.net/wiki/Shiny_Pok%C3%A9mon
+	// return rand.IntN(65536) < 16
+	// if index is high, f will be near 1 and thus it will likely be shiny
+	// if index is low, f will be near 0 and thus will not be shiny
+	return 1 / (1 + math.Pow(math.E, 10*(5-index)))
+}
+
+func isShiny() (bool, error) {
+	indexes, err := getPlanetaryKIndex()
+	if err != nil {
+		log.Fatal(err)
+	}
+	avg := averageIndex(indexes)
+	prob := getPShiny(avg)
+	return rand.Float64() < prob, nil
+}
+
+func newReadme(readme string, pokemon *Pokemon, shiny bool) string {
 	// update link and name
-	readme = strings.Replace(string(readme), "{{link}}", getSprite(pokemon), 1)
+	readme = strings.Replace(string(readme), "{{link}}", getSprite(pokemon, shiny), 1)
 	readme = strings.Replace(readme, "{{name}}", strings.Title(pokemon.Name), 1)
 	return readme
 }
@@ -122,11 +173,15 @@ func main() {
 	if err != nil {
 		log.Fatal(err)
 	}
+	shiny, err := isShiny()
+	if err != nil {
+		log.Fatal(err)
+	}
 	readme, err := fs.ReadFile("README.base.md")
 	if err != nil {
 		log.Fatal(err)
 	}
-	new := newReadme(string(readme), pokemon)
+	new := newReadme(string(readme), pokemon, shiny)
 	if err := os.WriteFile("README.md", []byte(new), 0666); err != nil {
 		log.Fatal(err)
 	}
