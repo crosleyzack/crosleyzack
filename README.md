@@ -85,8 +85,8 @@ https://img.shields.io/badge/with%20a%20logo-8A2BE2?style=for-the-badge&logo=dat
 
 <details>
   <div align="center">
-    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/female/186.gif" alt="Random Pokemon" height="100" width="100" />
+    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/180.gif" alt="Random Pokemon" height="100" width="100" />
     <br >
-    <b>Politoed</b>
+    <b>Flaaffy</b>
   </div>
 </details>
