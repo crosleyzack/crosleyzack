@@ -1,17 +1,19 @@
 package main
 
 import (
-	"math"
+	"bytes"
 	"embed"
 	"encoding/json"
 	"fmt"
 	"io"
 	"log"
+	"math"
 	"math/rand/v2"
 	"net/http"
 	"os"
 	"sort"
 	"strings"
+	"text/template"
 
 	"github.com/samber/lo"
 )
@@ -177,12 +179,19 @@ func main() {
 	if err != nil {
 		log.Fatal(err)
 	}
-	readme, err := fs.ReadFile("README.base.md")
+	t, err := template.ParseFiles("README.base.md")
 	if err != nil {
 		log.Fatal(err)
 	}
-	new := newReadme(string(readme), pokemon, shiny)
-	if err := os.WriteFile("README.md", []byte(new), 0666); err != nil {
+	var buf bytes.Buffer
+	t.Execute(&buf, struct {
+		Name string
+		Link string
+	}{
+		Name: strings.Title(pokemon.Name),
+		Link: getSprite(pokemon, shiny),
+	})
+	if err := os.WriteFile("README.md", buf.Bytes(), 0666); err != nil {
 		log.Fatal(err)
 	}
 	return

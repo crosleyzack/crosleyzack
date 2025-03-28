@@ -85,8 +85,8 @@ https://img.shields.io/badge/with%20a%20logo-8A2BE2?style=for-the-badge&logo=dat
 
 <details>
   <div align="center">
-    <img src="{{link}}" alt="Random Pokemon" height="100" width="100" />
+    <img src="{{.Link}}" alt="Random Pokemon" height="100" width="100" />
     <br >
-    <b>{{name}}</b>
+    <b>{{.Name}}</b>
   </div>
 </details>
