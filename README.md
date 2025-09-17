@@ -96,8 +96,8 @@ https://img.shields.io/badge/with%20a%20logo-8A2BE2?style=for-the-badge&logo=dat
 
 <details>
   <div align="center">
-    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/49.gif" alt="Random Pokemon" height="100" width="100" />
+    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/225.gif" alt="Random Pokemon" height="100" width="100" />
     <br >
-    <b>Venomoth</b>
+    <b>Delibird</b>
   </div>
 </details>
