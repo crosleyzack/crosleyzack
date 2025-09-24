@@ -22,8 +22,8 @@ import (
 var fs embed.FS
 
 func getPokemonNumber() int {
-	// first four gens, because they are the best
-	return rand.IntN(494)
+	// first five gens, because they are animated
+	return rand.IntN(650)
 }
 
 // Sprites is a struct that contains the URLs for the different sprites of a pokemon
