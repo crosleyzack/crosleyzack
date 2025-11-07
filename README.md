@@ -16,7 +16,7 @@
   </a>
   &nbsp;&nbsp;
   <a href="mailto:mail@crosleyzack.com">
-    <img src="https://img.shields.io/badge/email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" />
+    <img src="https://img.shields.io/badge/email-6D4AFF?style=for-the-badge&logo=protonmail&logoColor=white" />
   </a>
 </div>
 
@@ -96,8 +96,8 @@ https://img.shields.io/badge/with%20a%20logo-8A2BE2?style=for-the-badge&logo=dat
 
 <details>
   <div align="center">
-    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/347.gif" alt="Random Pokemon" height="100" width="100" />
+    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/female/275.gif" alt="Random Pokemon" height="100" width="100" />
     <br >
-    <b>Anorith</b>
+    <b>Shiftry</b>
   </div>
 </details>
