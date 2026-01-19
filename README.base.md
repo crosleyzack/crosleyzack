@@ -4,7 +4,7 @@
 <div align='center'>
   <a href="https://www.linkedin.com/in/crosleyzack/">
     <!-- TODO replace with proper linkedin logo when microsoft returns to sanity -->
-    <img src="https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=invision&logoColor=white" />
+    <img src="https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=logmein&logoColor=white" />
   </a>
   &nbsp;&nbsp;
   <a href="https://crosleyzack.com">
