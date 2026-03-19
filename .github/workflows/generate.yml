@@ -10,10 +10,14 @@ on:
 jobs:
   make-readme:
     name: "Generate the README"
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-slim
     steps:
       - uses: actions/checkout@v3
       - name: Install requirements
+        run: |
+          sudo apt-get update
+          sudo apt-get install golang-go
+      - name: Install go libraries
         run: go get github.com/samber/lo@v1
       - name: Create new README
         run: go run main.go
