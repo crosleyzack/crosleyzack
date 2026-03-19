@@ -13,10 +13,9 @@ jobs:
     runs-on: ubuntu-slim
     steps:
       - uses: actions/checkout@v3
-      - name: Install requirements
-        run: |
-          sudo apt-get update
-          sudo apt-get install golang-go
+      - uses: actions/setup-go@v5
+        with:
+          go-version: 1.24
       - name: Install go libraries
         run: go get github.com/samber/lo@v1
       - name: Create new README
