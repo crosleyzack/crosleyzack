@@ -18,6 +18,13 @@ jobs:
           go-version-file: go.mod
       - name: Create new README
         run: go run main.go
+      - name: setup and configure gitsign
+        run: |
+          go install github.com/sigstore/gitsign@latest
+          git config --global gpg.x509.program gitsign
+          git config --global gpg.format x509
+          git config --global commit.gpgsign true
+          git config --global tag.gpgsign true
       - name: Push new README
         run: |
           git config user.name  'github-actions[bot]'
