@@ -21,7 +21,7 @@ jobs:
       - name: setup and configure gitsign
         run: |
           wget https://github.com/sigstore/gitsign/releases/download/v0.17.1/gitsign_0.17.1_linux_arm64.deb
-          sudo dpkg -i gitsign_0.3.0_linux_amd64.deb
+          sudo dpkg -i gitsign_0.17.1_linux_arm64.deb
           git config --global gpg.x509.program gitsign
           git config --global gpg.format x509
           git config --global commit.gpgsign true
