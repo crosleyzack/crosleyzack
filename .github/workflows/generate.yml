@@ -9,6 +9,7 @@ jobs:
     name: "Generate the README"
     runs-on: ubuntu-slim
     permissions:
+      id-token: write
       contents: write
     steps:
       - uses: actions/checkout@v7
