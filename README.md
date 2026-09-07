@@ -27,11 +27,11 @@
   &nbsp;
   <img src="https://img.shields.io/badge/python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
   &nbsp;
-  <img src="https://img.shields.io/badge/rust-C45508?style=for-the-badge&logo=rust&logoColor=white" />
+  <img src="https://img.shields.io/badge/c++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white" />
   &nbsp;
   <img src="https://img.shields.io/badge/clojure-5881D8?style=for-the-badge&logo=clojure&logoColor=white" />
   &nbsp;
-  <img src="https://img.shields.io/badge/nix-5277C3?style=for-the-badge&logo=nixos&logoColor=white" />
+  <img src="https://img.shields.io/badge/julia-9558B2?style=for-the-badge&logo=julia&logoColor=white" />
   &nbsp;
   <img src="https://img.shields.io/badge/bash-4EAA25?style=for-the-badge&logo=gnubash&logoColor=white" />
 
@@ -52,7 +52,7 @@
 
   <img src="https://img.shields.io/badge/actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white" />
   &nbsp;
-  <img src="https://img.shields.io/badge/terraform-844FBA?style=for-the-badge&logo=terraform&logoColor=white" />
+  <img src="https://img.shields.io/badge/argo-EF7B4D?style=for-the-badge&logo=argo&logoColor=white" />
   &nbsp;
   <img src="https://img.shields.io/badge/docker-2CA5E0?style=for-the-badge&logo=docker&logoColor=white" />
   &nbsp;
@@ -96,8 +96,8 @@ https://img.shields.io/badge/with%20a%20logo-8A2BE2?style=for-the-badge&logo=dat
 
 <details>
   <div align="center">
-    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/female/64.gif" alt="Random Pokemon" height="100" width="100" />
+    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/604.gif" alt="Random Pokemon" height="100" width="100" />
     <br >
-    <b>Kadabra</b>
+    <b>Eelektross</b>
   </div>
 </details>
