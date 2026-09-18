@@ -66,8 +66,7 @@
   &nbsp;
   <img src="https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white" />
   &nbsp;
-  <!-- TODO replace with proper linkedin logo when microsoft returns to sanity -->
-  <img src="https://img.shields.io/badge/vscode-0078D4?style=for-the-badge&logo=vscodium&logoColor=white" />
+  <img src="https://img.shields.io/badge/zed-084CCF?style=for-the-badge&logo=zedindustries&logoColor=white" />
   &nbsp;
   <img src="https://img.shields.io/badge/vim-019733?style=for-the-badge&logo=vim&logoColor=white" />
   &nbsp;
